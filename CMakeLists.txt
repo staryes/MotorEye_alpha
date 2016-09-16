@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( ColorTracking_Arduino )
+find_package( OpenCV REQUIRED )
+add_executable( ColorTracking_Arduino ColorTracking_Arduino.cpp )
+target_link_libraries( ColorTracking_Arduino ${OpenCV_LIBS} )
